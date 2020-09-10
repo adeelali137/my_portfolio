@@ -1,3 +1,11 @@
+/* GLOBAL */
+
+body{overflow-x: hidden;}
+html{scroll-behavior: smooth;}
+
+
+
+/* HERO */
 #hero{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)) ,url(./imgs/html-1832991_1920.png); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 100vh;}
 #hero .content{color: #ffffff; position: absolute; top: 50%; right: 50%; transform: translate(50%, -50%);}
 #hero .content h2{font-family: 'Nunito', sans-serif; font-size: 52px; line-height: 64px;}
@@ -13,5 +21,44 @@
 #about .about-content .btn{padding: 10px 40px; font-size: 18px; font-family: cursive;}
 #about .progress-lines{padding: 0;}
 #about .progress-lines .progress{margin: 25px 0; height: 24px;}
-#about .progress-lines .progress h6{color: #ffffff;}
+#about .progress-lines .progress h6{color: #ffffff; text-align: left; margin-left: 10px; margin-top: 3px;}
 #about .progress-lines .progress p{color: #000; margin-top: 12px; position: absolute; right: -5%; font-size: 14px; font-family: cursive;}
+
+
+/* services */
+#services{background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)) ,url(./imgs/photo-1550439062-609e1531270e.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 100vh; background-attachment: fixed;}
+#services{color: #f1f1f1; padding: 100px 0;}
+#services .col-12 h1{font-family: 'Nunito', sans-serif; font-size: 42px; margin-bottom: 8px; font-weight: 600; color: #ffffff; }
+#services .col-12 p{font-family: 'Nunito', sans-serif; font-size: 20px; margin-bottom: 50px; color: #ffffff;}
+#services .box{border: 1px solid #e1e1e1; height: 300px; padding: 30px; transition: all .3s ease-in-out;}
+#services .box:hover{background-color: #28a745; color: #e1e1e1;}
+#services .box:hover i.fa{ color: #e1e1e1;}
+#services .box i.fa{font-size: 3em; color: #28a745; margin-bottom: 20px; transition: all .3s ease-in-out;}
+#services .box h1{font-size: 28px; margin-bottom: 16px; font-weight: 400; color: #ffffff;}
+#services .box p{font-size: 16px; color: #f1f1f1;}
+
+
+
+/* word */
+#work{padding: 50px 0; background-color: #e1e1e1; color: #000000;}
+#work h1{position: absolute; top: 50%; right: 50%; transform: translate(50% , -50%);}
+#work h6{text-align: center; margin-top: 150px;}
+
+
+
+
+/* Copyrights */
+#copyr{padding: 80px 0; background-color: #f1f1f1;}
+#copyr .lets-talk h1{font-family: 'Nunito', sans-serif; font-size: 40px; margin-bottom: 40px;}
+#copyr .lets-talk h1 a{text-decoration: none; color: #28a745; font-weight: 600;}
+#copyr .lets-talk p{font-size: 16px; line-height: 30px; margin: 0 0 20px 0; padding: 0 200px 0 0;}
+#copyr .lets-talk h6{margin-bottom: 30px;}
+#copyr .social-links{margin-bottom: 20px; padding: 0 0 10px 0; border-bottom: 1px solid #555;}
+#copyr .social-links a{text-decoration: none; list-style: none;}
+#copyr .social-links .fa{margin: 20px; font-size: 40px;}
+#copyr .social-links .fa-facebook-square{color: royalblue;}
+#copyr .social-links .fa-instagram{color: #E1306C;}
+#copyr .social-links .fa-github-square{color: #000;}
+#copyr .social-links .fa-linkedin-square{color: blue;}
+#copyr .social-links .fa-google{color: #db3236;}
+#copyr h5{font-size: 16px; font-weight: 400;}
