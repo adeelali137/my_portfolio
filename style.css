@@ -1,22 +1,41 @@
 /* GLOBAL */
-
+*{margin: 0; padding: 0; box-sizing: border-box;}
 body{overflow-x: hidden;}
 html{scroll-behavior: smooth;}
 
 
-
 /* HERO */
-#hero{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)) ,url(./imgs/html-1832991_1920.png); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 100vh;}
+#hero{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)) ,url(./imgs/html-1832991_1920.png); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 100vh; }
 #hero .content{color: #ffffff; position: absolute; top: 50%; right: 50%; transform: translate(50%, -50%);}
+#hero .content img{width: 180px; height: 180px;}
 #hero .content h2{font-family: 'Nunito', sans-serif; font-size: 52px; line-height: 64px;}
 #hero .content h4{font-family: 'Nunito', sans-serif; font-size: 32px; }
 #hero .content img{border-radius: 50%; margin-bottom: 30px; border: 5px solid #555; outline: none; transition: all .4s ease-in-out;}
 #hero .content img:hover{border: 5px solid #e1e1e1;}
 
+#herofaq{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)) ,url(./imgs/html-1832991_1920.png); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 80vh;}
+#herofaq .content{color: #ffffff; position: absolute; top: 40%; right: 50%; transform: translate(50%, -50%);}
+#herofaq .content img{width: 180px; height: 180px;}
+#herofaq .content h2{font-family: 'Nunito', sans-serif; font-size: 52px; line-height: 64px;}
+#herofaq .content h4{font-family: 'Nunito', sans-serif; font-size: 32px; }
+#herofaq .content img{border-radius: 50%; margin-bottom: 30px; border: 5px solid #555; outline: none; transition: all .4s ease-in-out;}
+#herofaq .content img:hover{border: 5px solid #e1e1e1;}
+
+#herocon{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)) ,url(./imgs/html-1832991_1920.png); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 80vh;}
+#herocon .content{color: #ffffff; position: absolute; top: 40%; right: 50%; transform: translate(50%, -50%);}
+#herocon .content img{width: 180px; height: 180px;}
+#herocon .content h2{font-family: 'Nunito', sans-serif; font-size: 52px; line-height: 64px;}
+#herocon .content h4{font-family: 'Nunito', sans-serif; font-size: 32px; }
+#herocon .content img{border-radius: 50%; margin-bottom: 30px; border: 5px solid #555; outline: none; transition: all .4s ease-in-out;}
+#herocon .content img:hover{border: 5px solid #e1e1e1;}
+
+
+
+
 /* ABOUT */
 #about{background-color: #f1f1f1; padding: 100px 0;}
 #about .about-content{padding: 0 20px; text-align: justify;}
-#about .about-content h2{color: #000; margin-bottom: 20px; font-family: sans-serif;}
+#about .about-content h2{color: #000; margin-bottom: 20px; font-family: 'Roboto' , sans-serif;}
 #about .about-content p{word-spacing: 4px; margin-bottom: 20px;}
 #about .about-content .btn{padding: 10px 40px; font-size: 18px; font-family: cursive;}
 #about .progress-lines{padding: 0;}
@@ -26,8 +45,8 @@ html{scroll-behavior: smooth;}
 
 
 /* services */
-#services{background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)) ,url(./imgs/photo-1550439062-609e1531270e.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 100vh; background-attachment: fixed;}
-#services{color: #f1f1f1; padding: 100px 0;}
+#services{background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)) ,url(./imgs/photo-1550439062-609e1531270e.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 100%; background-attachment: fixed;}
+#services{color: #f1f1f1; padding: 100px 0; position: relative;}
 #services .col-12 h1{font-family: 'Nunito', sans-serif; font-size: 42px; margin-bottom: 8px; font-weight: 600; color: #ffffff; }
 #services .col-12 p{font-family: 'Nunito', sans-serif; font-size: 20px; margin-bottom: 50px; color: #ffffff;}
 #services .box{border: 1px solid #e1e1e1; height: 300px; padding: 30px; transition: all .3s ease-in-out;}
@@ -40,10 +59,12 @@ html{scroll-behavior: smooth;}
 
 
 /* word */
-#work{padding: 50px 0; background-color: #e1e1e1; color: #000000;}
-#work h1{position: absolute; top: 50%; right: 50%; transform: translate(50% , -50%);}
-#work h6{text-align: center; margin-top: 150px;}
-
+#work{padding: 50px 0; background-color: #717171; color: #ffffff;}
+#work h1{font-family: 'Nunito', sans-serif; font-size: 42px; margin-bottom: 40px; font-weight: 600; color: #f1f1f1;}
+#work .content-work{margin: 20px 0; border: 5px solid #555555; transition: all .3s ease-in-out;}
+#work .content-work:hover{border: 5px solid #f1f1f1;}
+#work .view-more{margin-top: 30px; }
+#work .view-more a{font-family: cursive; padding: 8px 30px;}
 
 
 
@@ -62,3 +83,58 @@ html{scroll-behavior: smooth;}
 #copyr .social-links .fa-linkedin-square{color: blue;}
 #copyr .social-links .fa-google{color: #db3236;}
 #copyr h5{font-size: 16px; font-weight: 400;}
+
+
+
+/********** 
+FAQS
+PAGE
+************
+*/
+
+  /* section */
+.questions{padding: 100px 0; background-color: #e1e1e1;}
+.section-center { width: 70%; margin: 0 auto; }
+.question {background: #f1f1f1; border-radius: 10px; padding: 1.2rem 1.2rem 0 1.2rem;  margin-bottom: 1.5rem; transition: .5s ease}
+.question-title {display: flex; justify-content: space-between; align-items: center; text-transform: capitalize; padding-bottom: 1rem; font-size: 20px; color: #000; font-family: 'Nunito', sans-serif; font-weight: 500; transition: .5s ease}
+.question-title p {margin-bottom: 0;  transition: .5s ease}
+.question-btn {font-size: 1.5rem; cursor: pointer; transition: all .5s ease-in-out; border: none; outline: none; color: #000000;}
+.question-text { padding: 1rem 0 1.5rem 0; border-top: 1px solid rgba(0, 0, 0, 0.2); transition: all .5s ease-in-out;}
+.question-text p { margin-bottom: 0; transition: all .5s ease-in-out;}
+  /* hide text */
+.question-text {display: none; transition: all .5s ease-in-out;}
+.show-text{ transition: all .5s ease;}
+.show-text .question-text {display: block; transition: .5s ease;}
+.minus-icon {display: none; }
+.show-text .minus-icon { display: inline; }
+.show-text .plus-icon {  display: none; }
+
+/* nav */
+
+.menu-icon {position: absolute; top: 5%; left: 5%; color: #ffffff; font-size: 36px; }
+.menu-icon a{text-decoration: none; color: #ffffff; }
+.menu-icon a:hover{text-decoration: none; color: #28a745;}
+
+.menu{background-color: #555555; width: 300px; height: 100%; position: absolute; top: -100%; left: 0; transition: all .5s ease-in-out; z-index:1000;}
+.shownav{top: 0;}
+.menu .inner-content{position: absolute; top: 50%; right: 50%; transform: translate(50%,-50%);}
+.menu .inner-content ul{list-style: none;}
+.menu .inner-content ul li{margin: 20px 0;}
+.menu .inner-content ul li a{text-decoration: none; color: #f1f1f1; font-size: 26px; font-weight: 500; font-family: 'Nunito', sans-serif; letter-spacing: 1px; transition: .4s ease-in;}
+.menu .inner-content ul li a:hover,
+.menu .inner-content ul li a.active{color: #28a745;}
+.menu .inner-content h6{position: absolute; top: -40%; left: -80%; color: #ffffff; font-size: 26px; font-weight: 600; background-color: #28a745; padding: 6px 12px ; border-radius: 50%; font-family: cursive; cursor: pointer;}
+.menu .inner-content h6:hover{color: #28a745; background-color: #f1f1f1;}
+
+/* ***************
+Contact
+PAGE
+************** */
+#map{margin-top: -100px;}
+
+#contact{padding: 50px 0; background-color: #e1e1e1; margin-top: -16px;}
+#contact h1{margin-bottom: 30px; font-size: 42px; font-weight: 500; font-family: 'Nunito', sans-serif; letter-spacing: 1px;}
+#contact .input-session{width: 40%; margin: 0 auto;}
+#contact .input-session input{display: block; margin: 20px 0; width: 450px; height: 40px; border-radius: 5px; border: none; outline: none; padding: 10px 20px; }
+#contact .input-session textarea{display: block; margin: 20px 0; width: 450px;  border-radius: 5px; border: none; outline: none; padding: 10px 20px; resize: none;}
+#contact .input-session .btn{display: block; text-transform: uppercase; font-size: 20px; font-family: cursive;} 

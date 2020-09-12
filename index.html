@@ -10,20 +10,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./owl carosule/owl.carousel.min.css">
     <link rel="stylesheet" href="./owl carosule/owl.theme.default.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="./icons/site.webmanifest">
 
 
 </head>
 <body>
     
-    <!-- NAVBAR -->
+     <!-- NAVBAR -->
+     <div class="menu">
+      <div class="inner-content">
+        <h6 title="Close Menu" onclick="closenav()">X</h6>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="faqs.html" target="_blank">Faqs</a></li>
+          <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- END NAVBAR -->
-
 
     <!-- HERO -->
     <div id="hero">
         <div class="container">
+          <div class="menu-icon">
+            <a href="javascript:void(0)"><span id="menu-icon"><i class="fa fa-bars"></i></span></a>
+          </div>
             <div class="content text-center">
-                <img src="./imgs/dp.jpg" alt="">
+                <img src="./imgs/dp.jpg" class="img-fluid" alt="">
                 <h2>Hello, I'am Adeel Ismail</h2>
                 <h4>I am Front End Developer</h4>
             </div>
@@ -125,11 +143,87 @@
 
     <!-- Projects -->
     <div id="work">
-      <div class="conatiner">
+      <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 text-center">
             <h1>Projects</h1>
-            <h6>Uploading Soon</h6>
+          </div>
+          <div class="col-md-6">
+            <div class="content-work">
+              <img src="./port/schol.png" class="img-fluid" alt="">
+              <!-- <div class="overlay-work"> -->
+                <!-- <h6>MySchool Website</h6> -->
+                <!-- <p><i class="fa fa-"></i></p> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-work">
+              <img src="./port/Reas.png" class="img-fluid" alt="">
+              <!-- <div class="overlay-work"> -->
+                <!-- <h6>MySchool Website</h6> -->
+                <!-- <p><i class="fa fa-"></i></p> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-work">
+              <img src="./port/BookArt.png" class="img-fluid" alt="">
+              <!-- <div class="overlay-work"> -->
+                <!-- <h6>MySchool Website</h6> -->
+                <!-- <p><i class="fa fa-"></i></p> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-work">
+              <img src="./port/Chur.png" class="img-fluid" alt="">
+              <!-- <div class="overlay-work"> -->
+                <!-- <h6>MySchool Website</h6> -->
+                <!-- <p><i class="fa fa-"></i></p> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-work">
+              <img src="./port/Startup.png" class="img-fluid" alt="">
+              <!-- <div class="overlay-work"> -->
+                <!-- <h6>MySchool Website</h6> -->
+                <!-- <p><i class="fa fa-"></i></p> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-work">
+              <img src="./port/wordpress_pet.png" class="img-fluid" alt="">
+              <!-- <div class="overlay-work"> -->
+                <!-- <h6>MySchool Website</h6> -->
+                <!-- <p><i class="fa fa-"></i></p> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-work">
+              <img src="./port/wordpress_blog.png" class="img-fluid" alt="">
+              <!-- <div class="overlay-work"> -->
+                <!-- <h6>MySchool Website</h6> -->
+                <!-- <p><i class="fa fa-"></i></p> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="content-work">
+              <img src="./port/wordpress_africa.png" class="img-fluid" alt="">
+              <!-- <div class="overlay-work"> -->
+                <!-- <h6>MySchool Website</h6> -->
+                <!-- <p><i class="fa fa-"></i></p> -->
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <div class="view-more">
+              <a href="javascript:void(0)" class="btn btn-success btn-lg">View More</a>
+            </div>
           </div>
         </div>
       </div>
@@ -167,7 +261,7 @@
     </div>
     <!-- END Copyrights -->
 
-
+    <script src="app.js"></script>
     <script src="./owl carosule/owl.carousel.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
