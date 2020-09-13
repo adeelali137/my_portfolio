@@ -3,6 +3,24 @@
 body{overflow-x: hidden;}
 html{scroll-behavior: smooth;}
 
+/* nav */
+
+.menu-icon {position: absolute; top: 5%; left: 5%; color: #ffffff; font-size: 36px;}
+.menu-icon a{text-decoration: none; color: #ffffff; }
+.menu-icon a:hover{text-decoration: none; color: #28a745;}
+
+.menu{background-color: #555555; width: 300px; height: 100%; position: absolute; top: -100%; left: 0; transition: all .5s ease-in-out; z-index:1000;}
+.shownav{top: 0;}
+.menu .inner-content{position: absolute; top: 50%; right: 50%; transform: translate(50%,-50%);}
+.menu .inner-content ul{list-style: none;}
+.menu .inner-content ul li{margin: 20px 0;}
+.menu .inner-content ul li a{text-decoration: none; color: #f1f1f1; font-size: 26px; font-weight: 500; font-family: 'Nunito', sans-serif; letter-spacing: 1px; transition: .4s ease-in;}
+.menu .inner-content ul li a:hover,
+.menu .inner-content ul li a.active{color: #28a745;}
+.menu .inner-content h6{position: absolute; top: -40%; left: -80%; color: #ffffff; font-size: 26px; font-weight: 600; background-color: #28a745; padding: 6px 12px ; border-radius: 50%; font-family: cursive; cursor: pointer;}
+.menu .inner-content h6:hover{color: #28a745; background-color: #f1f1f1;}
+
+
 
 /* HERO */
 #hero{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)) ,url(./imgs/html-1832991_1920.png); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; height: 100vh; }
@@ -109,22 +127,7 @@ PAGE
 .show-text .minus-icon { display: inline; }
 .show-text .plus-icon {  display: none; }
 
-/* nav */
 
-.menu-icon {position: absolute; top: 5%; left: 5%; color: #ffffff; font-size: 36px; }
-.menu-icon a{text-decoration: none; color: #ffffff; }
-.menu-icon a:hover{text-decoration: none; color: #28a745;}
-
-.menu{background-color: #555555; width: 300px; height: 100%; position: absolute; top: -100%; left: 0; transition: all .5s ease-in-out; z-index:1000;}
-.shownav{top: 0;}
-.menu .inner-content{position: absolute; top: 50%; right: 50%; transform: translate(50%,-50%);}
-.menu .inner-content ul{list-style: none;}
-.menu .inner-content ul li{margin: 20px 0;}
-.menu .inner-content ul li a{text-decoration: none; color: #f1f1f1; font-size: 26px; font-weight: 500; font-family: 'Nunito', sans-serif; letter-spacing: 1px; transition: .4s ease-in;}
-.menu .inner-content ul li a:hover,
-.menu .inner-content ul li a.active{color: #28a745;}
-.menu .inner-content h6{position: absolute; top: -40%; left: -80%; color: #ffffff; font-size: 26px; font-weight: 600; background-color: #28a745; padding: 6px 12px ; border-radius: 50%; font-family: cursive; cursor: pointer;}
-.menu .inner-content h6:hover{color: #28a745; background-color: #f1f1f1;}
 
 /* ***************
 Contact
@@ -138,3 +141,149 @@ PAGE
 #contact .input-session input{display: block; margin: 20px 0; width: 450px; height: 40px; border-radius: 5px; border: none; outline: none; padding: 10px 20px; }
 #contact .input-session textarea{display: block; margin: 20px 0; width: 450px;  border-radius: 5px; border: none; outline: none; padding: 10px 20px; resize: none;}
 #contact .input-session .btn{display: block; text-transform: uppercase; font-size: 20px; font-family: cursive;} 
+
+
+/* *******
+MEDIA QUERY
+******** */
+@media screen and (max-width: 1060px) {
+  #hero .content h2{font-size: 42px; }
+  #hero .content h4{font-size: 28px; }
+  #herofaq .content h2{font-size: 30px; }
+  #herofaq .content h4{font-size: 28px; }
+  #herocon .content h2{ font-size: 42px; }
+  #herocon .content h4{ font-size: 28px; }
+}
+
+@media screen and (max-width: 996px) {
+  #about .about-content{margin-bottom: 50px;}
+  #services .box{ height: 270px; padding: 30px; margin: 20px 0;}
+  #copyr .lets-talk p{font-size: 16px; line-height: 30px; margin: 0 0 20px 0; padding: 0 100px 0 0;}
+
+}
+
+@media screen and (max-width: 872px) {
+  #hero .content h2{font-family: 'Nunito', sans-serif; font-size: 38px; line-height: 64px;}
+  #hero .content h4{font-family: 'Nunito', sans-serif; font-size: 26px; }
+  #herofaq .content h2{font-size: 30px;}
+  #herocon .content h2{font-size: 38px;}
+  #herocon .content h4{font-size: 26px;}
+  #copyr .lets-talk p{font-size: 16px; line-height: 30px; margin: 0 0 20px 0; padding: 0 100px 0 0; text-align: justify;}
+  #about .progress-lines .progress p{ right: 0%;}
+  #map{display: none;}
+  #contact .input-session{width: 100%; margin: 0 auto;}
+}
+
+@media screen and (max-width: 784px) {
+  #hero .content h2{font-family: 'Nunito', sans-serif; font-size: 34px; line-height: 64px; margin-bottom: -1px;}
+  #herofaq .content h2{font-family: 'Nunito', sans-serif; font-size: 34px; line-height: 40px; margin-bottom: -1px;}
+  #herocon .content h2{font-family: 'Nunito', sans-serif; font-size: 34px; line-height: 64px; margin-bottom: -1px;}
+  #copyr .lets-talk p{font-size: 16px; line-height: 30px; margin: 0 0 20px 0; padding: 0 100px 0 0; text-align: justify;}
+}
+
+@media screen and (max-width: 703px) {
+  #hero .content h2{font-size: 32px; line-height: 60px;}
+  #herofaq .content h2{font-size: 30px; line-height:30px;}
+  #herocon .content h2{font-size: 32px; line-height: 60px;}
+  #copyr .lets-talk p{font-size: 16px; line-height: 30px; margin: 0 0 20px 0; padding: 0 100px 0 0; text-align: justify;}
+  #copyr .lets-talk p{padding: 0 70px 0 0;}
+  
+
+}
+
+@media screen and (max-width: 659px) {
+  #hero .content h2{font-size: 28px; line-height: 60px;}
+  #hero .content h4{font-size: 20px; }
+  #herofaq .content h2{font-size: 28px; line-height: 30px;}
+  #herofaq .content h4{font-size: 20px; }
+  #herocon .content h2{font-size: 28px; line-height: 60px;}
+  #herocon .content h4{font-size: 20px; }
+  #hero .content img{width: 150px; height: 150px; margin-bottom: 5px;}
+  #herofaq .content img{width: 150px; height: 150px; margin-bottom: 5px;}
+  #herocon .content img{width: 150px; height: 150px; margin-bottom: 5px;}
+  #copyr .lets-talk p{padding: 0 70px 0 0;}
+
+}
+
+@media screen and (max-width: 582px) {
+  #hero .content h2{font-size: 24px; line-height: 60px;}
+  #hero .content h4{font-size: 16px; margin-top: -5px;}
+  #herofaq .content h2{font-size: 26px; line-height: 30px;}
+  #herocon .content h2{font-size: 24px; line-height: 60px;}
+  #copyr .lets-talk p{padding: 0 70px 0 0;}
+  #about .progress-lines .progress p{ right: 1%;}
+  #services .col-12 h1{font-size: 36px; margin-bottom: 6px; }
+  #services .col-12 p{font-size: 18px; margin-bottom: 40px; }
+  .menu-icon {position: absolute; top: 5%; left: 5%; color: #ffffff; font-size: 30px;}
+
+
+}
+
+@media screen and (max-width: 498px) {
+  #hero .content h2{font-size: 22px; line-height: 50px;}
+  #hero .content h4{font-size: 14px;}
+  #hero .content img{width: 140px; height: 140px;}
+  #herocon .content h2{font-size: 28px; line-height: 30px;}
+  #herocon .content img{width: 140px; height: 140px; margin-bottom: 20px;}
+  #herofaq .content h2{font-size: 24px; line-height: 30px;}
+  #herofaq .content h4{font-size: 14px;}
+  #herofaq .content img{width: 140px; height: 140px;}
+  #copyr .lets-talk p{padding: 0 50px 0 0;}
+
+}
+
+@media screen and (max-width: 459px) {
+  #hero .content h2{font-size: 20px; line-height: 50px;}
+  #hero .content h4{font-size: 14px; }
+  #herofaq .content h2{font-size: 20px; line-height: 30px;}
+  #herofaq .content h4{font-size: 14px; }
+  #herocon .content h2{font-size: 20px; line-height: 50px;}
+  #herocon .content h4{font-size: 14px; }
+  #copyr .lets-talk p{padding: 0 50px 0 0;}
+
+}
+
+
+@media screen and (max-width: 416px) {
+  #hero .content h2{font-size: 18px; line-height: 40px;}
+  #hero .content h4{font-size: 12px; margin-top: -5px;}
+  #hero .content img{width: 130px; height: 130px;}
+  #herofaq .content h2{font-size: 18px; line-height: 20px;}
+  #herofaq .content h4{font-size: 12px; margin-top: -5px;}
+  #herofaq .content img{width: 130px; height: 130px;}
+  #herocon .content h2{font-size: 18px; line-height: 40px;}
+  #herocon .content h4{font-size: 12px; margin-top: -5px;}
+  #herocon .content img{width: 130px; height: 130px;}
+  #copyr .lets-talk p{padding: 0 50px 0 0;}
+
+}
+
+@media screen and (max-width: 377px) {
+  #hero .content h2{font-size: 16px; line-height: 40px;}
+  #hero .content h4{font-size: 10px; margin-top: -5px;}
+  #hero .content img{width: 120px; height: 120px;}
+  #herofaq .content h2{font-size: 16px; line-height: 20px;}
+  #herofaq .content h4{font-size: 10px; margin-top: -5px;}
+  #herofaq .content img{width: 120px; height: 120px;}
+  #herocon .content h2{font-size: 16px; line-height: 20px;}
+  #herocon .content h4{font-size: 10px; margin-top: -5px;}
+  #herocon .content img{width: 120px; height: 120px;}
+  #copyr .lets-talk p{padding: 0 50px 0 0;}
+  #services .col-12 h1{font-size: 30px; margin-bottom: 6px; font-weight: 600; color: #ffffff; }
+  #services .col-12 p{font-size: 16px; margin-bottom: 20px;}
+
+}
+
+@media screen and (max-width: 330px) {
+  #hero .content h2{font-size: 16px; line-height: 20px;}
+  #hero .content h4{font-size: 10px; margin-top: 5px;}
+  #hero .content img{width: 120px; height: 120px;}
+  #herofaq .content h2{font-size: 16px; line-height: 20px;}
+  #herofaq .content h4{font-size: 10px; margin-top: 5px;}
+  #herofaq .content img{width: 120px; height: 120px;}
+  #herocon .content h2{font-size: 16px; line-height: 20px;}
+  #herocon .content h4{font-size: 10px; margin-top: 5px;}
+  #herocon .content img{width: 120px; height: 120px;}
+  #copyr .lets-talk p{padding: 0 50px 0 0;}
+
+}
